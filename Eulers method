@@ -1,0 +1,12 @@
+dt=0.01;
+O=0;
+w=4;
+t=0;
+hold on
+while t<=25
+    t=t+dt;
+    f=-sin(O);
+    O=O+dt*w;
+    w=w+dt*f;
+    plot(O,w,'.')
+end
